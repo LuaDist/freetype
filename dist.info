@@ -1,0 +1,11 @@
+--- This file is part of LuaDist project
+
+name = "freetype"
+version = "2.4.10"
+
+desc = "Freetype library."
+author = "David Turner, Robert Wilhelm, and Werner Lemberg"
+license = "FreeType License/GNU General Public License version 2"
+url = "http://www.freetype.org"
+maintainer = "Peter Kapec"
+
