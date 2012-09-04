@@ -94,7 +94,7 @@ set(BASE_SRCS
 	IF(HAVE_WAIT_H)
 		ADD_EXECUTABLE(ftrandom src/tools/ftrandom/ftrandom.c)
 		TARGET_LINK_LIBRARIES(ftrandom freetype m)		# todo:  m
-		INSTALL(TARGETS ftrandom RUNTIME DESTINATION  ${INSTALL_EXAMPLE} LIBRARY DESTINATION ${INSTALL_EXAMPLE} ARCHIVE DESTINATION ${INSTALL_EXAMPLE} COMPONENT Example)
+		INSTALL(TARGETS ftrandom DESTINATION  ${INSTALL_EXAMPLE} COMPONENT Example)
 	ENDIF()
 
 	ADD_EXECUTABLE(test_afm src/tools/test_afm.c)
@@ -106,7 +106,7 @@ set(BASE_SRCS
 	ADD_EXECUTABLE(test_trig src/tools/test_trig.c)
 	TARGET_LINK_LIBRARIES(test_trig freetype m)
 
-	INSTALL(TARGETS test_afm test_bbox test_trig RUNTIME DESTINATION  ${INSTALL_EXAMPLE} LIBRARY DESTINATION ${INSTALL_EXAMPLE} ARCHIVE DESTINATION ${INSTALL_EXAMPLE} COMPONENT Example)
+	INSTALL(TARGETS test_afm test_bbox test_trig RUNTIME DESTINATION  ${INSTALL_EXAMPLE} COMPONENT Example)
 
 # Install Freetype Library
 	install_library(freetype)
